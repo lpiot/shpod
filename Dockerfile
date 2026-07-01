@@ -43,7 +43,7 @@ RUN cp $(find bin -name crane) /usr/local/bin
 
 # https://github.com/fluxcd/flux2/releases
 FROM builder AS flux
-ARG FLUX_VERSION=2.7.2
+ARG FLUX_VERSION=2.9.0
 RUN helper-curl tar flux \
     https://github.com/fluxcd/flux2/releases/download/v$FLUX_VERSION/flux_${FLUX_VERSION}_linux_@GOARCH.tar.gz
 
