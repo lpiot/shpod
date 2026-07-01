@@ -113,7 +113,7 @@ RUN helper-curl tar "--strip-components=3 kubernetes/client/bin/kubectl" \
 
 # https://github.com/stackrox/kube-linter/releases
 FROM builder AS kube-linter
-ARG KUBELINTER_VERSION=v0.7.6
+ARG KUBELINTER_VERSION=v0.8.3
 RUN go install golang.stackrox.io/kube-linter/cmd/kube-linter@$KUBELINTER_VERSION
 RUN cp $(find bin -name kube-linter) /usr/local/bin
 
