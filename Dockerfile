@@ -25,7 +25,7 @@ RUN helper-curl tar bento \
 
 # https://github.com/coder/code-server/releases
 FROM builder AS code-server
-ARG CODE_SERVER_VERSION=4.118.0
+ARG CODE_SERVER_VERSION=4.126.0
 RUN mkdir -p /code-server
 RUN helper-curl tar "--directory=/code-server --strip-components=1" \
     https://github.com/coder/code-server/releases/download/v${CODE_SERVER_VERSION}/code-server-${CODE_SERVER_VERSION}-linux-@CODERARCH.tar.gz
