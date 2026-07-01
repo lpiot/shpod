@@ -101,7 +101,7 @@ RUN helper-curl bin kompose \
 
 # https://github.com/kubecolor/kubecolor/releases
 FROM builder AS kubecolor
-ARG KUBECOLOR_VERSION=0.5.2
+ARG KUBECOLOR_VERSION=0.6.0
 RUN helper-curl tar kubecolor \
     https://github.com/kubecolor/kubecolor/releases/download/v${KUBECOLOR_VERSION}/kubecolor_${KUBECOLOR_VERSION}_linux_@GOARCH.tar.gz
 
