@@ -107,7 +107,7 @@ RUN helper-curl tar kubecolor \
 
 # https://github.com/kubernetes/kubernetes/releases
 FROM builder AS kubectl
-ARG KUBECTL_VERSION=1.34.1
+ARG KUBECTL_VERSION=1.36.1
 RUN helper-curl tar "--strip-components=3 kubernetes/client/bin/kubectl" \
     https://dl.k8s.io/v${KUBECTL_VERSION}/kubernetes-client-linux-@GOARCH.tar.gz
 
