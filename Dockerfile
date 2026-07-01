@@ -137,7 +137,7 @@ RUN helper-curl tar kustomize \
 
 # https://github.com/kubernetes/minikube/releases
 FROM builder AS minikube
-ARG MINIKUBE_VERSION=v1.37.0
+ARG MINIKUBE_VERSION=v1.38.1
 RUN git clone https://github.com/kubernetes/minikube --depth=1 --branch $MINIKUBE_VERSION
 WORKDIR minikube
 RUN make
