@@ -90,7 +90,7 @@ RUN helper-curl tar k9s \
 
 # https://github.com/kubernetes-sigs/kind/releases
 FROM builder AS kind
-ARG KIND_VERSION=v0.30.0
+ARG KIND_VERSION=v0.32.0
 RUN helper-curl bin kind \
     https://github.com/kubernetes-sigs/kind/releases/download/${KIND_VERSION}/kind-linux-@GOARCH
 
